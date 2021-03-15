@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Abi store is a Tech company for making apps">
+    <meta name="keywords" content="Abi store for application store to download">
+    <meta name="author" content="Abijuru Seth">
+
+    <title>Home | AbiStore</title>
+
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+</head>
+<body>
+    <!-- mobile_phone_menu_toggle -->
+    <input type="checkbox" name="toggle" id="toggle">
+
+    <!-- settings -->
+    <div class="settings">
+        <div class="toggle_settings">
+            <svg id="camera-lens-line" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                <path id="Path_13" data-name="Path 13" d="M0,0H32V32H0Z" fill="none"/>
+                <path id="Path_14" data-name="Path 14" d="M13,26.794,16,21.6H6.3A11.225,11.225,0,0,0,13,26.794ZM5.153,18.8h6L6.3,10.4A11.148,11.148,0,0,0,4.8,16,11.266,11.266,0,0,0,5.153,18.8Zm3-10.791,3,5.191L16,4.8A11.164,11.164,0,0,0,8.153,8.009ZM19,5.206,16,10.4h9.7A11.225,11.225,0,0,0,19,5.206ZM26.847,13.2h-6L25.7,21.6A11.148,11.148,0,0,0,27.2,16,11.266,11.266,0,0,0,26.847,13.2Zm-3,10.791-3-5.191L16,27.2a11.164,11.164,0,0,0,7.847-3.209ZM16,30A14,14,0,1,1,30,16,14,14,0,0,1,16,30Zm1.617-16.8H14.383L12.767,16l1.616,2.8h3.234L19.233,16l-1.616-2.8Z" fill="#fff"/>
+            </svg>              
+        </div>
+        <div class="settings_panel">
+            <p>Dark</p>
+            <p>Light</p>
+        </div>
+    </div>
+
+    <div class="main_container col-12 col-mob-12 col-tab-12">
+        <div class="navbar col-12 col-mob-12 col-tab-12" id="home">
+            <div class="log col-2 col-mob-4 col-tab-3">
+                <img class="lap-icon" src="./img/logo.png" alt="logo">
+                <img class="mob-icon" src="./img/mob-icon.png" alt="logo">
+            </div>
+            <div class="menus col-8 col-tab-9">
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="Search apps" maxlength="15" minlength="2">
+                    <div class="icon_search">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                            <path id="Icon_awesome-search" data-name="Icon awesome-search" d="M31.565,27.666l-6.232-6.231A1.5,1.5,0,0,0,24.271,21H23.252A13,13,0,1,0,21,23.248v1.019a1.5,1.5,0,0,0,.438,1.062l6.232,6.231a1.494,1.494,0,0,0,2.119,0l1.769-1.769a1.507,1.507,0,0,0,.006-2.125ZM13,21a8,8,0,1,1,8-8A8,8,0,0,1,13,21Z" fill="#ffffff"/>
+                        </svg>                          
+                    </div>
+                </div>
+                <div class="ul_links col-mob-8 col-">
+                    <ul>
+                        <li><a class="active" href="./index.html">Home</a></li>
+                        <li><a href="./downloads.html">Downloads</a></li>
+                        <li><a href="./staff.html">Staff</a></li>
+                        <li><a href="./staticts.html">Statistics</a></li>
+                    </ul>
+                    <div class="toggle_menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z"/></svg>
+                    </div>
+                </div>
+            </div>
+            <div class="signup col-2">
+                <div class="btn_container">
+                    <a href="signup.html">Get started</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu_toggle_mob_menu col-mob-12" id="menu_togglering">
+            <div class="ul_links_mob">
+                <ul>
+                    <li><a class="active" href="./index.html">Home</a></li>
+                    <li><a href="./downloads.html">Downloads</a></li>
+                    <li><a href="./staff.html">Staff</a></li>
+                    <li><a href="./staticts.html">Statistics</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="banner col-12 col-tab-12 col-mob-12">
+            <div class="banner_design">
+                <img class="image_2" src="./img/ban1.png" alt="design">
+            </div>
+            
+            <div class="banner_container col-12">
+                <div class="description_content col-6 col-tab-12 col-mob-12">
+                    <div class="detail_container">
+                        <p>Innovating in quality apps</p>
+                        <h1><span>Develop</span> and download Quality free & premium applications through AbiStore.</h1>
+                        <p class="last">Connecting with AbiStore developers is the best way to quality interactive applications</p>
+                        <div class="app_logos">
+                            <img src="./img/xbox-logo-png-2496.png" alt="appstore">
+                            <img src="./img/figma-1-logo-png-transparent.png" alt="appstore">
+                            <img src="./img/google-drive.png" alt="appstore">
+                            <img src="./img/app-store.png" alt="appstore">
+                        </div>
+                        <div class="btn_started">
+                            <div class="btn_getstarted btn_getstarted1">
+                                <a href="signup.html">Get started</a>
+                            </div>
+                            <div class="btn_getstarted">
+                                <a href="downloads.html">Applications</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="image_illustrations col-6 col-tab-12 col-mob-12">
+                    <div class="image_container">
+                        <img src="./img/img5.png" alt="image">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="services col-12 col-tab-12 col-mob-12">
+            <h2>What We <span>Offer For You</span></h2>
+            <div class="service_containers col-12 col-tab-12 col-mob-12">
+                <div class="service_content col-5">
+                    <div class="image_service">
+                        <img src="./img/Business-Collaboration.png" alt="">
+                    </div>
+                    <div class="content_service">
+                        <h3>Business Collaboration</h3>
+                        <p>
+                            Creating purposeful connections, both internally and  
+                            <br>externally, to achieve goals or solve problems
+                        </p>
+                    </div>
+                </div>
+                <div class="service_content col-5">
+                    <div class="image_service">
+                        <img src="./img/Engineering-Services.png" alt="">
+                    </div>
+                    <div class="content_service">
+                        <h3>Application Engineering</h3>
+                        <p>
+                            Work directly with customers to understand their specific 
+                            <br> technical requirements and ensure growth.
+                        </p>
+                    </div>
+                </div>
+                <div class="service_content col-5">
+                    <div class="image_service">
+                        <img src="./img/Creative-Minds.png" alt="">
+                    </div>
+                    <div class="content_service">
+                        <h3>Creative minds</h3>
+                        <p>
+                            Creating purposeful connections, both internally and  
+                            <br>externally, to achieve goals or solve problems
+                        </p>
+                    </div>
+                </div> 
+                <div class="service_content col-5">
+                    <div class="image_service">
+                        <img src="./img/Revenue-Generation.png" alt="">
+                    </div>
+                    <div class="content_service">
+                        <h3>Revenue Generation</h3>
+                        <p>
+                            Creating purposeful connections, both internally and  
+                            <br>externally, to achieve goals or solve problems
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="strategies col-12 col-tab-12 col-mob-12">
+            <div class="strategies_image col-6 col-tab-11 col-mob-12">
+                <img src="./img/strategies.png" alt="strategies">
+            </div>
+            <div class="strategy_details col-6 col-tab-11 col-mob-12">
+                <h2>Brighter Corporate Ideas And Great <span>Strategies</span></h2>
+                <p>Working with abistore is the best opportunity and easy way
+                    to get fast <br> development of your ideas width strategies.
+                </p>
+                <div class="strategy_content strategy1">
+                    <div class="dot">
+                        <img src="./img/dot.png" alt="dot">
+                    </div>
+                    <p>
+                        Explore Our Technology Solution :<span> Having the best technologies, 
+                        busy clever staff, we develop enhanced applications for your ideas fast.</span>
+                    </p>
+                </div>
+                <div class="strategy_content">
+                    <div class="dot">
+                        <img src="./img/dot2.png" alt="dot">
+                    </div>
+                    <p>
+                        Web Design and Development : <span> Design and creativty is best, 
+                        of our uniqueness hence clients always get services for their projects.</span>
+                    </p>
+                </div>
+                <button>Discover more 
+                    <svg id="arrow-right-line" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35">
+                        <path id="Path_75" data-name="Path 75" d="M0,0H35V35H0Z" fill="none"/>
+                        <path id="Path_76" data-name="Path 76" d="M24.54,15.793,15.489,6.636l2.386-2.414L31,17.5,17.875,30.778l-2.386-2.414,9.052-9.157H4V15.793Z" fill="#fff"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+
+        <div class="start_project col-12 col-tab-12 col-mob-12">
+            <div class="start_project_content col-mob-12">
+                <div class="circle_cover1"></div>
+                <div class="circle_cover2"></div>
+                <div class="start_project_details col-mob-12">
+                    <h1>Have A Project In Mind? Let's Get To Work</h1>
+                    <p>If you already have got a project either an application both mobile, desktop and web based applications <br>
+                    we are ready to get involved and help build the best and most clerified and interactive app world wide</p>
+                </div>
+                <div class="start_project_link col-mob-12">
+                    <button>Start a Project</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="solutions col-12 col-tab-12 col-mob-12">
+
+            <img class="tri_shape" src="./img/ban1.png" alt="this">
+            <img class="dot1" src="./img/dot.png" alt="this">
+            <img class="dot2" src="./img/dot2.png" alt="this">
+
+            <h5>Technology Solutions</h5>
+            <h1>We Provide IT & Business Oriented Application Services</h1>
+            <p>
+                Application engineers are engineers hired by companies marketing 
+                technical products. The Application engineer help the sales department 
+                with customers needing help or advice in applying the company’s products.
+            </p>
+            <div class="services_view col-tab-12 col-12 col-mob-12">
+                <div class="services_contents col-mob-12 col-tab-12">
+                    <div class="service_details col-mob-12 col-tab-12 service1">
+                        <div class="service_avatar">
+                            <img src="./img/ser1.png" alt="service">
+                        </div>
+                        <div class="service_descript">
+                            <h3>Secure Applications</h3>
+                            <p>This is the only safe and good place to build secure applications with our developers</p>
+                        </div>
+                    </div>
+
+                    <div class="service_details col-mob-12 col-tab-12 center_service_details_left">
+                        <div class="service_avatar">
+                            <img src="./img/ser2.png" alt="service">
+                        </div>
+                        <div class="service_descript">
+                            <h3>Interactive Applications</h3>
+                            <p>This is the only safe and good place to build secure applications with our developers</p>
+                        </div>
+                    </div>
+                    <div class="service_details col-mob-12 col-tab-12 service3">
+                        <div class="service_avatar">
+                            <img src="./img/ser3.png" alt="service">
+                        </div>
+                        <div class="service_descript">
+                            <h3>Bit Coin Exchange</h3>
+                            <p>This is the only safe and good place to build secure applications with our developers</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="services_contents_illustrations col-mob-12 col-tab-12">
+                    <img src="./img/services.png" alt="we">
+                </div>
+                <div class="services_contents col-mob-12 col-tab-12">
+                    <div class="service_details col-mob-12 col-tab-12 service4">
+                        <div class="service_avatar">
+                            <img src="./img/ser4.png" alt="service">
+                        </div>
+                        <div class="service_descript">
+                            <h3>Big Serve Stations</h3>
+                            <p>This is the only safe and good place to build secure applications with our developers</p>
+                        </div>
+                    </div>
+
+                    <div class="service_details col-mob-12 col-tab-12 center_service_details_right">
+                        <div class="service_avatar">
+                            <img src="./img/ser5.png" alt="service">
+                        </div>
+                        <div class="service_descript">
+                            <h3>Fast App Hosting</h3>
+                            <p>This is the only safe and good place to build secure applications with our developers</p>
+                        </div>
+                    </div>
+                    <div class="service_details col-mob-12 col-tab-12 service5">
+                        <div class="service_avatar">
+                            <img src="./img/ser6.png" alt="service">
+                        </div>
+                        <div class="service_descript">
+                            <h3>Bitcoin Payment</h3>
+                            <p>This is the only safe and good place to build secure applications with our developers</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="testmonials col-12 col-tab-12 col-mob-12">
+            <h1>What Our Happy <span>Clients</span> Say</h1>
+            <div class="testmonial_content col-tab-12 col-mob-12">
+                <div class="testmonial_avatar col-mob-12">
+                    <img src="./img/download.png" alt="testmony_avatar">
+                </div>
+                <div class="testmonial_details col-mob-12">
+                    <div class="testmony_slide">
+                        <div class="testmony">
+                            <div class="avatar_client">
+                                <div class="client_image">
+                                    <div class="image_container">
+                                        <img src="./img/staff/8.jpg" alt="client">
+                                    </div>
+                                </div>
+                                <div class="client_name">
+                                    <h4>Abijuru Seth</h4>
+                                    <p>abiheloaf@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="client_details">
+                                <p>Thanks to abi store alot cause it has helped me get my business developed 
+                                    with fast development and appropriate services I found it the best place for years.</p>
+                                <p>I even think ignoring working with them is wastage of time and funds for you business  
+                                    and apps cause they have got good </p>
+                                <div class="social_media">
+                                    <img src="./img/xbox-logo-png-2496.png" alt="appstore">
+                                    <img src="./img/figma-1-logo-png-transparent.png" alt="appstore">
+                                    <img src="./img/twitter.png" alt="appstore">
+                                    <img src="./img/slack-logo-icon.png" alt="appstore">
+                                    <img src="./img/google-drive.png" alt="appstore">
+                                    <img src="./img/app-store.png" alt="appstore">
+                                </div>
+                            </div>
+                        </div>  
+                        
+                        <div class="testmony">
+                            <div class="avatar_client">
+                                <div class="client_image">
+                                    <div class="image_container">
+                                        <img src="./img/staff/7.jpg" alt="client">
+                                    </div>
+                                </div>
+                                <div class="client_name">
+                                    <h4>Shumbusho David</h4>
+                                    <p>shumbushodavi@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="client_details">
+                                <p>Thanks to abi store alot cause it has helped me get my business developed 
+                                    with fast development and appropriate services I found it the best place for years.</p>
+                                <p>I even think ignoring working with them is wastage of time and funds for you business  
+                                    and apps cause they have got</p>
+                                <div class="social_media">
+                                    <img src="./img/xbox-logo-png-2496.png" alt="appstore">
+                                    <img src="./img/figma-1-logo-png-transparent.png" alt="appstore">
+                                    <img src="./img/twitter.png" alt="appstore">
+                                    <img src="./img/slack-logo-icon.png" alt="appstore">
+                                    <img src="./img/google-drive.png" alt="appstore">
+                                    <img src="./img/app-store.png" alt="appstore">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testmony">
+                            <div class="avatar_client client_last">
+                                <div class="client_image">
+                                    <div class="image_container">
+                                        <img src="./img/staff/9.jpg" alt="client">
+                                    </div>
+                                </div>
+                                <div class="client_name">
+                                    <h4>Turinumugisha Souvenir</h4>
+                                    <p>turinomugishasouvenir@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="client_details">
+                                <p>Thanks to abi store alot cause it has helped me get my business developed 
+                                    with fast development and appropriate services I found it the best place for years.</p>
+                                <p>I even think ignoring working with them is wastage of time and funds for you business  
+                                    and apps cause they have got good</p>
+                                <div class="social_media">
+                                    <img src="./img/xbox-logo-png-2496.png" alt="appstore">
+                                    <img src="./img/figma-1-logo-png-transparent.png" alt="appstore">
+                                    <img src="./img/twitter.png" alt="appstore">
+                                    <img src="./img/slack-logo-icon.png" alt="appstore">
+                                    <img src="./img/google-drive.png" alt="appstore">
+                                    <img src="./img/app-store.png" alt="appstore">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testmony">
+                            <div class="avatar_client">
+                                <div class="client_image">
+                                    <div class="image_container">
+                                        <img src="./img/staff/8.jpg" alt="client">
+                                    </div>
+                                </div>
+                                <div class="client_name">
+                                    <h4>Abijuru Seth</h4>
+                                    <p>abiheloaf@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="client_details">
+                                <p>Thanks to abi store alot cause it has helped me get my business developed 
+                                    with fast development and appropriate services I found it the best place for years.</p>
+                                <p>I even think ignoring working with them is wastage of time and funds for you business  
+                                    and apps cause services.</p>
+                                <div class="social_media">
+                                    <img src="./img/xbox-logo-png-2496.png" alt="appstore">
+                                    <img src="./img/figma-1-logo-png-transparent.png" alt="appstore">
+                                    <img src="./img/twitter.png" alt="appstore">
+                                    <img src="./img/slack-logo-icon.png" alt="appstore">
+                                    <img src="./img/google-drive.png" alt="appstore">
+                                    <img src="./img/app-store.png" alt="appstore">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>   
+                </div>
+            </div>
+            <div class="client_companies col-12 col-tab-12 col-mob-12" >
+                <h2>Faithful Companies</h2>
+                <div class="company_logos col-mob-12">
+                    <div class="logos_row col-mob-11 col-tab-12">
+                        <img src="./img/brands/1.png" alt="">
+                        <img src="./img/brands/2.png" alt="">
+                        <img src="./img/brands/3.png" alt="">
+                        <img src="./img/brands/4.png" alt="">
+                        <img src="./img/brands/5.png" alt="">
+                    </div>
+                    <div class="logos_row col-mob-11 col-tab-12">
+                        <img src="./img/brands/6.png" alt="">
+                        <img src="./img/brands/7.png" alt="">
+                        <img src="./img/brands/8.png" alt="">
+                        <img src="./img/brands/9.png" alt="">
+                        <img src="./img/brands/10.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact col-12 col-mob-12 col-tab-12">
+            <div class="contact_us_image col-mob-12 col-tab-6">
+                <img src="./img/Img02.png" alt="contact">
+                <div class="contact_image_container col-12 col-mob-12 col-tab-12">
+                    <img class="contact_img" src="./img/contact.png" alt="contact">
+                </div>
+                <div class="social-links">
+                    <a href="https://twitter.com/seth_abi" class="twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://web.facebook.com/abijuru.seth" class="facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/seth_abi" class="instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://abiheloaf@gmail.com" class="google-plus"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.slack.com" class="slack"><i class="fab fa-slack"></i></a>
+                    <a href="https://www.pinterest.com/" class="pinterest"><i class="fab fa-pinterest"></i></a>
+                    <a href="https://www.youtube.com/channel/UCVa85WM00ibbtAiXqQR-c9Q" class="youtube"><i class="fab fa-youtube"></i></a>
+                    <a href="https://web.whatsapp.com/" class="instagram"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="contact_us_info col-mob-12 col-tab-6">
+                <h1>Want To Get Intouch Contact Us Through the <span> Social Medias</span></h1>
+                <p> Application development 
+                    tools provide the right resources that the users can 
+                    integrate freely with the hardware to enhance productivity.</p>
+                <div class="form">
+                    <form action="#" method="POST">
+                        <input type="text" placeholder="Enter username" required maxlength="12">
+                        <input type="email" placeholder="Enter email" required maxlength="35">
+                        <textarea name="message" id="message" cols="30" rows="10">Enter message</textarea>
+                        <button>Send message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="footer col-12 col-mob-12 col-tab-12">
+            <div class="main_footer_container col-12 col-tab-12 col-mob-12">
+                <div class="footer_content col-3 col-tab-6 col-mob-12">
+                    <img src="./img/logo1.png" alt="logo">
+                    <p class="footer_p_descript">
+                        App development tools are the software or computing solutions 
+                        required to give the app developer flexibility and scalable applications. to build security-rich, 
+                        innovative, and scalable applications.
+                         </p>
+                </div>
+                <div class="footer_content col-3 col-tab-6 col-mob-12">
+                    <h4>Important Links</h4>
+                    <a href="">Services</a>
+                    <a href="">Companies</a>
+                    <a href="">Downloads</a>
+                    <a href="">Staff</a>
+                    <a href="">Contact</a>
+                </div>
+                <div class="footer_content col-3 col-tab-6 col-mob-12">
+                    <h4>Contact Us</h4>
+                    <p> KK 232 St, Kigali</p>
+                    <p>Kabeza, Kigali</p>
+                    <p> Republic of Rwanda</p> 
+                    <p><strong>Phone:</strong> +250 781 294 147</p>
+                    <p><strong>Email:</strong> abiheloaf@gmail.com</p>
+                </div>
+                <div class="footer_content col-3 col-tab-6 col-mob-12">
+                    <h4>My Newsletter</h4>
+                    <h3>If you feel like you wanna always get my updates then make 
+                        sure to subscribe below.</h3>
+                    <form action="#" method="post">
+                        <input type="email" name="email" required placeholder="Enter email" maxlength="15">
+                        <input type="submit" value="Subscribe">
+                    </form>
+                    <div class="top">
+                        <a href="#home">
+                            top
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                <path fill="none" d="M0 0h24v24H0z"/>
+                                <path fill="#fff" d="M13 7.828V20h-2V7.828l-5.364 5.364-1.414-1.414L12 4l7.778 7.778-1.414 1.414L13 7.828z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright_section col-12">
+                <div class="copyright_company col-6 col-mob-12">
+                    <p>&copy; Copyright 2020 <strong>Rwanda Coding Academy</strong>. All Rights Reserved</p>
+                </div>
+                <div class="copyright_designer col-6 col-mob-12">
+                    <p>Designed with <i class="fas fa-heart"></i> by Abi-Seth</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Abi store is a Tech company for making apps">
+    <meta name="keywords" content="Abi store for application store to download">
+    <meta name="author" content="Abijuru Seth">
+
+    <title>Downloads | AbiStore</title>
+
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+</head>
+<body>
+    <!-- mobile_phone_menu_toggle -->
+    <input type="checkbox" name="toggle" id="toggle">
+
+    <!-- settings -->
+    <div class="settings">
+        <div class="toggle_settings">
+            <svg id="camera-lens-line" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                <path id="Path_13" data-name="Path 13" d="M0,0H32V32H0Z" fill="none"/>
+                <path id="Path_14" data-name="Path 14" d="M13,26.794,16,21.6H6.3A11.225,11.225,0,0,0,13,26.794ZM5.153,18.8h6L6.3,10.4A11.148,11.148,0,0,0,4.8,16,11.266,11.266,0,0,0,5.153,18.8Zm3-10.791,3,5.191L16,4.8A11.164,11.164,0,0,0,8.153,8.009ZM19,5.206,16,10.4h9.7A11.225,11.225,0,0,0,19,5.206ZM26.847,13.2h-6L25.7,21.6A11.148,11.148,0,0,0,27.2,16,11.266,11.266,0,0,0,26.847,13.2Zm-3,10.791-3-5.191L16,27.2a11.164,11.164,0,0,0,7.847-3.209ZM16,30A14,14,0,1,1,30,16,14,14,0,0,1,16,30Zm1.617-16.8H14.383L12.767,16l1.616,2.8h3.234L19.233,16l-1.616-2.8Z" fill="#fff"/>
+            </svg>              
+        </div>
+        <div class="settings_panel">
+            <p>Dark</p>
+            <p>Light</p>
+        </div>
+    </div>
+
+    <div class="main_container col-12 col-mob-12 col-tab-12">
+        <div class="navbar col-12 col-mob-12 col-tab-12" id="home">
+            <div class="log col-2 col-mob-4 col-tab-3">
+                <img class="lap-icon" src="./img/logo.png" alt="logo">
+                <img class="mob-icon" src="./img/mob-icon.png" alt="logo">
+            </div>
+            <div class="menus col-8 col-tab-9">
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="Search apps" maxlength="15" minlength="2">
+                    <div class="icon_search">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                            <path id="Icon_awesome-search" data-name="Icon awesome-search" d="M31.565,27.666l-6.232-6.231A1.5,1.5,0,0,0,24.271,21H23.252A13,13,0,1,0,21,23.248v1.019a1.5,1.5,0,0,0,.438,1.062l6.232,6.231a1.494,1.494,0,0,0,2.119,0l1.769-1.769a1.507,1.507,0,0,0,.006-2.125ZM13,21a8,8,0,1,1,8-8A8,8,0,0,1,13,21Z" fill="#ffffff"/>
+                        </svg>                          
+                    </div>
+                </div>
+                <div class="ul_links col-mob-8 col-">
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a class="active" href="./downloads.html">Downloads</a></li>
+                        <li><a href="./staff.html">Staff</a></li>
+                        <li><a href="./staticts.html">Statistics</a></li>
+                    </ul>
+                    <div class="toggle_menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z"/></svg>
+                    </div>
+                </div>
+            </div>
+            <div class="signup col-2">
+                <div class="btn_container">
+                    <a href="signup.html">Get started</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu_toggle_mob_menu col-mob-12" id="menu_togglering">
+            <div class="ul_links_mob">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a class="active" href="./downloads.html">Downloads</a></li>
+                    <li><a href="./staff.html">Staff</a></li>
+                    <li><a href="./staticts.html">Statistics</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="banner col-12 col-tab-12 col-mob-12">
+            <div class="banner_content col-12 col-tab-12 col-mob-12">
+                <div class="banner_sidebar col-3 col-tab-6 col-mob-12">
+                    <div class="row_app_cat col-12 col-tab-12 col-mob-12">
+                        <div class="app_cat_title col-12 col-tab-12 col-mob-12">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="25" height="25"><path fill="none" d="M0 0h24v24H0z"/><path fill="#fff" d="M17 4a6 6 0 0 1 6 6v4a6 6 0 0 1-6 6H7a6 6 0 0 1-6-6v-4a6 6 0 0 1 6-6h10zm-7 5H8v2H6v2h1.999L8 15h2l-.001-2H12v-2h-2V9zm8 4h-2v2h2v-2zm-2-4h-2v2h2V9z"/></svg>
+                            <h2>
+                                Applications
+                            </h2>
+                        </div>
+                        <div class="category_apps col-12 col-tab-12 col-mob-12">
+                            <div class="app_cat col-6">
+                                <div class="cat_icon back1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#fff" d="M17 4a6 6 0 0 1 6 6v4a6 6 0 0 1-6 6H7a6 6 0 0 1-6-6v-4a6 6 0 0 1 6-6h10zm0 2H7a4 4 0 0 0-3.995 3.8L3 10v4a4 4 0 0 0 3.8 3.995L7 18h10a4 4 0 0 0 3.995-3.8L21 14v-4a4 4 0 0 0-3.8-3.995L17 6zm-7 3v2h2v2H9.999L10 15H8l-.001-2H6v-2h2V9h2zm8 4v2h-2v-2h2zm-2-4v2h-2V9h2z"/></svg>
+                                </div>
+                                <div class="cat_name">
+                                    Action
+                                </div> 
+                            </div>
+                            
+                            <div class="app_cat col-6">
+                                <div class="cat_icon back2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#fff" d="M18.901 10a2.999 2.999 0 0 0 4.075 1.113 3.5 3.5 0 0 1-1.975 3.55L21 21h-7v-2a2 2 0 0 0-1.85-1.995L12 17a2 2 0 0 0-1.995 1.85L10 19v2H3v-6.336a3.5 3.5 0 0 1-1.979-3.553A2.999 2.999 0 0 0 5.098 10h13.803zm-.971 2H6.069l-.076.079c-.431.42-.935.76-1.486 1.002l-.096.039.589.28-.001 5.6 3.002-.001v-.072l.01-.223c.149-2.016 1.78-3.599 3.854-3.698l.208-.005.223.01a4 4 0 0 1 3.699 3.787l.004.201L19 19l.001-5.6.587-.28-.095-.04a5.002 5.002 0 0 1-1.486-1.001L17.93 12zm-.894-9a3.5 3.5 0 0 0 4.446 2.86 3.5 3.5 0 0 1-3.29 3.135L18 9H6a3.5 3.5 0 0 1-3.482-3.14A3.5 3.5 0 0 0 6.964 3h10.072zM15.6 5H8.399a5.507 5.507 0 0 1-1.49 1.816L6.661 7h10.677l-.012-.008a5.518 5.518 0 0 1-1.579-1.722L15.6 5z"/></svg>
+                                </div>
+                                <div class="cat_name">
+                                    Adventure
+                                </div> 
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="category_apps col-12 col-tab-12 col-mob-12">
+                            <div class="app_cat col-6">
+                                <div class="cat_icon back3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#fff" d="M20.083 10.5l1.202.721a.5.5 0 0 1 0 .858L12 17.65l-9.285-5.571a.5.5 0 0 1 0-.858l1.202-.721L12 15.35l8.083-4.85zm0 4.7l1.202.721a.5.5 0 0 1 0 .858l-8.77 5.262a1 1 0 0 1-1.03 0l-8.77-5.262a.5.5 0 0 1 0-.858l1.202-.721L12 20.05l8.083-4.85zM12.514 1.309l8.771 5.262a.5.5 0 0 1 0 .858L12 13 2.715 7.429a.5.5 0 0 1 0-.858l8.77-5.262a1 1 0 0 1 1.03 0z"/></svg>
+                                </div>
+                                <div class="cat_name">
+                                    Arcade
+                                </div> 
+                            </div>
+                            
+                            <div class="app_cat col-6">
+                                <div class="cat_icon back4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#fff" d="M13 21v2h-2v-2H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h6a3.99 3.99 0 0 1 3 1.354A3.99 3.99 0 0 1 15 3h6a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1h-8zm7-2V5h-5a2 2 0 0 0-2 2v12h7zm-9 0V7a2 2 0 0 0-2-2H4v14h7z"/></svg>
+                                </div>
+                                <div class="cat_name">
+                                    Educational
+                                </div> 
+                            </div>                          
+                        </div>
+                        
+                        <div class="category_apps col-12 col-tab-12 col-mob-12">
+                            <div class="app_cat col-6">
+                                <div class="cat_icon back5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#fff" d="M9.973 18h4.054c.132-1.202.745-2.194 1.74-3.277.113-.122.832-.867.917-.973a6 6 0 1 0-9.37-.002c.086.107.807.853.918.974.996 1.084 1.609 2.076 1.741 3.278zM14 20h-4v1h4v-1zm-8.246-5a8 8 0 1 1 12.49.002C17.624 15.774 16 17 16 18.5V21a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2v-2.5C8 17 6.375 15.774 5.754 15zM13 10.004h2.5l-4.5 6v-4H8.5L13 6v4.005z"/></svg>
+                                </div>
+                                <div class="cat_name">
+                                    Simulation
+                                </div> 
+                            </div>
+                            
+                            <div class="app_cat col-6">
+                                <div class="cat_icon back6">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#fff" d="M15 5h2a2 2 0 0 1 2 2v8.17a3.001 3.001 0 1 1-2 0V7h-2v3l-4.5-4L15 2v3zM5 8.83a3.001 3.001 0 1 1 2 0v6.34a3.001 3.001 0 1 1-2 0V8.83zM6 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 12a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm12 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/></svg>
+                                </div>
+                                <div class="cat_name">
+                                    Strategy
+                                </div> 
+                            </div>
+                        </div>
+                        
+                        <div class="category_apps col-12 col-tab-12 col-mob-12">
+                            <div class="app_cat col-6">
+                                <div class="cat_icon back7">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0H24V24H0z"/><path fill="#fff" d="M18.328 4.256l-1.423 1.423c-3.138-2.442-7.677-2.22-10.562.664-2.374 2.374-2.944 5.868-1.71 8.78l2.417-2.417c-.213-1.503.258-3.085 1.414-4.242 1.71-1.71 4.352-1.922 6.293-.636l-1.464 1.464c-1.115-.532-2.49-.337-3.414.587-.924.923-1.12 2.299-.587 3.414l-6.45 6.45c-.034-3.5-.591-4.812-.788-6.702-.301-2.894.657-5.894 2.875-8.112 3.666-3.666 9.471-3.89 13.4-.673zm2.83.002c.034 3.5.591 4.811.788 6.701.301 2.894-.657 5.894-2.875 8.112-3.666 3.666-9.471 3.89-13.4.673l1.424-1.423c3.138 2.442 7.677 2.22 10.562-.664 2.374-2.374 2.944-5.868 1.71-8.78l-2.417 2.417c.213 1.503-.258 3.085-1.414 4.242-1.71 1.71-4.352 1.922-6.293.636l1.464-1.464c1.115.532 2.49.337 3.414-.587.924-.923 1.12-2.299.587-3.414l6.45-6.45z"/></svg>
+                                </div>
+                                <div class="cat_name">
+                                    Casino
+                                </div> 
+                            </div>
+                            
+                            <div class="app_cat col-6">
+                                <div class="cat_icon back8">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#fff" d="M11.102 7.815l.751-3.536a2 2 0 0 1 2.373-1.54l3.196.68a2 2 0 1 1-.416 1.956l-3.196-.68-.666 3.135c1.784.137 3.557.73 5.163 1.7a3.192 3.192 0 0 1 4.741 2.673v.021a3.192 3.192 0 0 1-1.207 2.55 2.855 2.855 0 0 1-.008.123c0 3.998-4.45 7.03-9.799 7.03-5.332 0-9.708-3.024-9.705-6.953a5.31 5.31 0 0 1-.01-.181 3.192 3.192 0 0 1 3.454-5.35 11.446 11.446 0 0 1 5.329-1.628zm9.286 5.526c.408-.203.664-.62.661-1.075a1.192 1.192 0 0 0-2.016-.806l-.585.56-.67-.455c-1.615-1.098-3.452-1.725-5.23-1.764h-1.006c-1.875.029-3.651.6-5.237 1.675l-.663.45-.584-.55a1.192 1.192 0 1 0-1.314 1.952l.633.29-.054.695c-.013.17-.013.339.003.584 0 2.71 3.356 5.03 7.708 5.03 4.371 0 7.799-2.336 7.802-5.106a3.31 3.31 0 0 0 0-.508l-.052-.672.604-.3zM7 13.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0zm7 0a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0zm-1.984 5.103c-1.397 0-2.767-.37-3.882-1.21a.424.424 0 0 1 .597-.597c.945.693 2.123.99 3.269.99s2.33-.275 3.284-.959a.439.439 0 0 1 .732.206.469.469 0 0 1-.119.423c-.684.797-2.484 1.147-3.881 1.147z"/></svg>
+                                </div>
+                                <div class="cat_name">
+                                    Social media
+                                </div> 
+                            </div>
+                        </div>
+                        
+                        <div class="category_apps col-12 col-tab-12 col-mob-12">
+                            <div class="app_cat col-6">
+                                <div class="cat_icon back9">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#fff" d="M15 4.582V12a3 3 0 1 1-2-2.83V2.05c5.053.501 9 4.765 9 9.95 0 5.523-4.477 10-10 10S2 17.523 2 12c0-5.185 3.947-9.449 9-9.95v2.012A8.001 8.001 0 0 0 12 20a8 8 0 0 0 3-15.418z"/></svg>
+                                </div>
+                                <div class="cat_name">
+                                    Music
+                                </div> 
+                            </div>
+                            
+                            <div class="app_cat col-6">
+                                <div class="cat_icon back10">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#fff" d="M6.94 14.036c-.233.624-.43 1.2-.606 1.783.96-.697 2.101-1.139 3.418-1.304 2.513-.314 4.746-1.973 5.876-4.058l-1.456-1.455 1.413-1.415 1-1.001c.43-.43.915-1.224 1.428-2.368-5.593.867-9.018 4.292-11.074 9.818zM17 9.001L18 10c-1 3-4 6-8 6.5-2.669.334-4.336 2.167-5.002 5.5H3C4 16 6 2 21 2c-1 2.997-1.998 4.996-2.997 5.997L17 9.001z"/></svg>
+                                </div>
+                                <div class="cat_name">
+                                    Art & Design
+                                </div> 
+                            </div>
+                        </div>
+                        
+                        <div class="category_apps col-12 col-tab-12 col-mob-12">
+                            <div class="app_cat col-6">
+                                <div class="cat_icon back11">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#fff" d="M9.55 11.5a2.25 2.25 0 1 1 0-4.5 2.25 2.25 0 0 1 0 4.5zm.45 8.248V16.4c0-.488.144-.937.404-1.338a6.473 6.473 0 0 0-5.033 1.417A8.012 8.012 0 0 0 10 19.749zM4.453 14.66A8.462 8.462 0 0 1 9.5 13c1.043 0 2.043.188 2.967.532.878-.343 1.925-.532 3.033-.532 1.66 0 3.185.424 4.206 1.156a8 8 0 1 0-15.253.504zm14.426 1.426C18.486 15.553 17.171 15 15.5 15c-2.006 0-3.5.797-3.5 1.4V20a7.996 7.996 0 0 0 6.88-3.914zM12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm3.5-9.5a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"/></svg>
+                                </div>
+                                <div class="cat_name">
+                                    Family
+                                </div> 
+                            </div>
+                            
+                            <div class="app_cat col-6">
+                                <div class="cat_icon back12">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#fff" d="M13 9h8L11 24v-9H4l9-15v9zm-2 2V7.22L7.532 13H13v4.394L17.263 11H11z"/></svg>
+                                </div>
+                                <div class="cat_name">
+                                    Racing
+                                </div> 
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="row_app_cat col-12 col-tab-12 col-mob-12">
+                        <div class="app_cat_title col-12 col-tab-12 col-mob-12">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="25" height="25"><path fill="none" d="M0 0h24v24H0z"/><path fill="#fff" d="M17 4a6 6 0 0 1 6 6v4a6 6 0 0 1-6 6H7a6 6 0 0 1-6-6v-4a6 6 0 0 1 6-6h10zm-7 5H8v2H6v2h1.999L8 15h2l-.001-2H12v-2h-2V9zm8 4h-2v2h2v-2zm-2-4h-2v2h2V9z"/></svg>
+                            <h2>
+                                Web & Games 
+                            </h2>
+                        </div>
+                        <div class="category_apps col-12 col-tab-12 col-mob-12">
+                            <div class="app_cat col-6">
+                                <div class="cat_icon back1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#fff" d="M6.527 14.514A1.973 1.973 0 0 1 4.56 16.48a1.973 1.973 0 0 1-1.967-1.967c0-1.083.884-1.968 1.967-1.968h1.968v1.968zm.992 0c0-1.083.884-1.968 1.967-1.968 1.083 0 1.968.885 1.968 1.968v4.927a1.973 1.973 0 0 1-1.968 1.967 1.973 1.973 0 0 1-1.967-1.967v-4.927zm1.967-7.987A1.973 1.973 0 0 1 7.52 4.56c0-1.083.884-1.967 1.967-1.967 1.083 0 1.968.884 1.968 1.967v1.968H9.486zm0 .992c1.083 0 1.968.884 1.968 1.967a1.973 1.973 0 0 1-1.968 1.968H4.56a1.973 1.973 0 0 1-1.967-1.968c0-1.083.884-1.967 1.967-1.967h4.927zm7.987 1.967c0-1.083.885-1.967 1.968-1.967s1.967.884 1.967 1.967a1.973 1.973 0 0 1-1.967 1.968h-1.968V9.486zm-.992 0a1.973 1.973 0 0 1-1.967 1.968 1.973 1.973 0 0 1-1.968-1.968V4.56c0-1.083.885-1.967 1.968-1.967s1.967.884 1.967 1.967v4.927zm-1.967 7.987c1.083 0 1.967.885 1.967 1.968a1.973 1.973 0 0 1-1.967 1.967 1.973 1.973 0 0 1-1.968-1.967v-1.968h1.968zm0-.992a1.973 1.973 0 0 1-1.968-1.967c0-1.083.885-1.968 1.968-1.968h4.927c1.083 0 1.967.885 1.967 1.968a1.973 1.973 0 0 1-1.967 1.967h-4.927z"/></svg>
+                                </div>
+                                <div class="cat_name">
+                                    Slack
+                                </div> 
+                            </div>
+                            
+                            <div class="app_cat col-6">
+                                <div class="cat_icon back2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#fff" d="M13.914 14.58a8.998 8.998 0 0 1-.484.104 7.06 7.06 0 0 1-2.664-.01c-.154-.03-.372-.083-.653-.158l-.921 1.197c-2.273-.073-3.137-1.596-3.137-1.596 0-3.381 1.481-6.122 1.481-6.122 1.481-1.133 2.89-1.102 2.89-1.102l.403.525a1.12 1.12 0 0 1 .112-.01 8.527 8.527 0 0 1 2.314.01l.442-.525s1.41-.031 2.89 1.103c0 0 1.482 2.74 1.482 6.121 0 0-.875 1.522-3.148 1.596l-1.007-1.134zM10.076 11C9.475 11 9 11.45 9 12s.485 1 1.076 1c.6 0 1.075-.45 1.075-1 .01-.55-.474-1-1.075-1zm3.848 0c-.6 0-1.075.45-1.075 1s.485 1 1.075 1c.601 0 1.076-.45 1.076-1s-.475-1-1.076-1zM21 23l-4.99-5H19V4H5v14h11.003l.57 2H5a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v19z"/></svg>
+                                </div>
+                                <div class="cat_name">
+                                    Discord
+                                </div> 
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="category_apps col-12 col-tab-12 col-mob-12">
+                            <div class="app_cat col-6">
+                                <div class="cat_icon back3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#fff" d="M21 3v11.74l-4.696 4.695h-3.913l-2.437 2.348H6.913v-2.348H3V6.13L4.227 3H21zm-1.565 1.565H6.13v11.74h3.13v2.347l2.349-2.348h4.695l3.13-3.13V4.565zm-3.13 3.13v4.696h-1.566V7.696h1.565zm-3.914 0v4.696h-1.565V7.696h1.565z"/></svg>
+                                </div>
+                                <div class="cat_name">
+                                    Twitch
+                                </div> 
+                            </div>
+                            
+                            <div class="app_cat col-6">
+                                <div class="cat_icon back4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#fff" d="M19.606 6.995c-.076-.298-.292-.523-.539-.592C18.63 6.28 16.5 6 12 6s-6.628.28-7.069.403c-.244.068-.46.293-.537.592C4.285 7.419 4 9.196 4 12s.285 4.58.394 5.006c.076.297.292.522.538.59C5.372 17.72 7.5 18 12 18s6.629-.28 7.069-.403c.244-.068.46-.293.537-.592C19.715 16.581 20 14.8 20 12s-.285-4.58-.394-5.005zm1.937-.497C22 8.28 22 12 22 12s0 3.72-.457 5.502c-.254.985-.997 1.76-1.938 2.022C17.896 20 12 20 12 20s-5.893 0-7.605-.476c-.945-.266-1.687-1.04-1.938-2.022C2 15.72 2 12 2 12s0-3.72.457-5.502c.254-.985.997-1.76 1.938-2.022C6.107 4 12 4 12 4s5.896 0 7.605.476c.945.266 1.687 1.04 1.938 2.022zM10 15.5v-7l6 3.5-6 3.5z"/></svg>
+                                </div>
+                                <div class="cat_name">
+                                    Youtube
+                                </div> 
+                            </div>                          
+                        </div>
+                        
+                        <div class="category_apps col-12 col-tab-12 col-mob-12">
+                            <div class="app_cat col-6">
+                                <div class="cat_icon back5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#fff" d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2zm0 2a8 8 0 1 0 0 16 8 8 0 0 0 0-16zM8.823 15.343l-.79 1.37a.823.823 0 1 1-1.428-.822l.589-1.016c.66-.206 1.201-.048 1.629.468zM13.21 8.66l2.423 4.194h2.141a.82.82 0 0 1 .823.822.82.82 0 0 1-.823.823h-1.19l.803 1.391a.824.824 0 0 1-1.427.823l-3.04-5.266c-.69-1.19-.198-2.383.29-2.787zm.278-3.044c.395.226.528.73.302 1.125l-3.528 6.109h2.553c.826 0 1.29.972.931 1.645h-7.48a.82.82 0 0 1-.822-.823.82.82 0 0 1 .822-.822h2.097l2.685-4.653-.838-1.456a.824.824 0 0 1 1.427-.823l.359.633.367-.633a.823.823 0 0 1 1.125-.302z"/></svg>
+                                </div>
+                                <div class="cat_name">
+                                    App store
+                                </div> 
+                            </div>
+                            
+                            <div class="app_cat col-6">
+                                <div class="cat_icon back6">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#fff" d="M15.3 5.55a2.9 2.9 0 0 0-2.9 2.847l-.028 1.575a.6.6 0 0 1-.68.583l-1.561-.212c-2.054-.28-4.022-1.226-5.91-2.799-.598 3.31.57 5.603 3.383 7.372l1.747 1.098a.6.6 0 0 1 .034.993L7.793 18.17c.947.059 1.846.017 2.592-.131 4.718-.942 7.855-4.492 7.855-10.348 0-.478-1.012-2.141-2.94-2.141zm-4.9 2.81a4.9 4.9 0 0 1 8.385-3.355c.711-.005 1.316.175 2.669-.645-.335 1.64-.5 2.352-1.214 3.331 0 7.642-4.697 11.358-9.463 12.309-3.268.652-8.02-.419-9.382-1.841.694-.054 3.514-.357 5.144-1.55C5.16 15.7-.329 12.47 3.278 3.786c1.693 1.977 3.41 3.323 5.15 4.037 1.158.475 1.442.465 1.973.538z"/></svg>
+                                </div>
+                                <div class="cat_name">
+                                    Twitter
+                                </div> 
+                            </div>
+                        </div>
+                        
+                        <div class="category_apps col-12 col-tab-12 col-mob-12">
+                            <div class="app_cat col-6">
+                                <div class="cat_icon back7">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#fff" d="M19.375 15.103A8.001 8.001 0 0 0 8.03 5.053l-.992-1.737A9.996 9.996 0 0 1 17 3.34c4.49 2.592 6.21 8.142 4.117 12.77l1.342.774-4.165 2.214-.165-4.714 1.246.719zM4.625 8.897a8.001 8.001 0 0 0 11.345 10.05l.992 1.737A9.996 9.996 0 0 1 7 20.66C2.51 18.068.79 12.518 2.883 7.89L1.54 7.117l4.165-2.214.165 4.714-1.246-.719zM8.5 14H14a.5.5 0 1 0 0-1h-4a2.5 2.5 0 1 1 0-5h1V7h2v1h2.5v2H10a.5.5 0 1 0 0 1h4a2.5 2.5 0 1 1 0 5h-1v1h-2v-1H8.5v-2z"/></svg>
+                                </div>
+                                <div class="cat_name">
+                                    Cash
+                                </div> 
+                            </div>
+                            
+                            <div class="app_cat col-6">
+                                <div class="cat_icon back8">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#fff" d="M13 9.874v10.054c3.619-.453 6.487-3.336 6.938-6.972H17L20.704 7A10.041 10.041 0 0 1 22 11.95C22 17.5 17.523 22 12 22S2 17.5 2 11.95c0-1.8.471-3.489 1.296-4.95L7 12.956H4.062c.451 3.636 3.32 6.519 6.938 6.972V9.874A4.002 4.002 0 0 1 12 2a4 4 0 0 1 1 7.874zM12 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/></svg>
+                                </div>
+                                <div class="cat_name">
+                                    Chess
+                                </div> 
+                            </div>
+                        </div>
+                        
+                        
+
+
+                    </div>
+                </div>
+                <div class="banner_details col-9 col-tab-6 col-mob-12">
+                    <h1>Recommended <span>applications</span></h1>
+                    <p>Below are all kinds of applications and website made by abistore developers and are fully functional by now, youc can try them.</p>
+                    <div class="application_container col-12 col-tab-12 col-mob-12">
+                        <div class="application col-tab-5 col-mob-12">
+                            <div class="app_logo_container col-12">
+                                <img src="./img/apps/1.png" alt="app">
+                            </div>
+                            <div class="app_detail_container col-12">
+                                <div class="star_container col-12">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#F39C12" d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928z"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#F39C12" d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928z"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#F39C12" d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928z"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#F39C12" d="M12 15.968l4.247 2.377-.949-4.773 3.573-3.305-4.833-.573L12 5.275v10.693zm0 2.292l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928L12 18.26z"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#F39C12" d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928L12 18.26zm0-2.292l4.247 2.377-.949-4.773 3.573-3.305-4.833-.573L12 5.275l-2.038 4.42-4.833.572 3.573 3.305-.949 4.773L12 15.968z"/></svg>
+                                </div>
+                                <div class="descript_app col-12">
+                                    <p>Discord client</p>
+                                    <div class="app_down_icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30"><path fill="none" d="M0 0h24v24H0z"/><path fill="#28CBFF" d="M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm0 18c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8zm1-8h3l-4 4-4-4h3V8h2v4z"/></svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                         <div class="application col-tab-5 col-mob-12">
+                            <div class="app_logo_container col-12">
+                                <img src="./img/apps/2.png" alt="app">
+                            </div>
+                            <div class="app_detail_container col-12">
+                                <div class="star_container col-12">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#F39C12" d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928z"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#F39C12" d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928z"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#F39C12" d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928z"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#F39C12" d="M12 15.968l4.247 2.377-.949-4.773 3.573-3.305-4.833-.573L12 5.275v10.693zm0 2.292l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928L12 18.26z"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#F39C12" d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928L12 18.26zm0-2.292l4.247 2.377-.949-4.773 3.573-3.305-4.833-.573L12 5.275l-2.038 4.42-4.833.572 3.573 3.305-.949 4.773L12 15.968z"/></svg>
+                                </div>
+                                <div class="descript_app col-12">
+                                    <p>Instagram</p>
+                                    <div class="app_down_icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30"><path fill="none" d="M0 0h24v24H0z"/><path fill="#28CBFF" d="M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm0 18c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8zm1-8h3l-4 4-4-4h3V8h2v4z"/></svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="application col-tab-5 col-mob-12">
+                            <div class="app_logo_container col-12">
+                                <img src="./img/apps/3.png" alt="app">
+                            </div>
+                            <div class="app_detail_container col-12">
+                                <div class="star_container col-12">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#F39C12" d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928z"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#F39C12" d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928z"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#F39C12" d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928z"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#F39C12" d="M12 15.968l4.247 2.377-.949-4.773 3.573-3.305-4.833-.573L12 5.275v10.693zm0 2.292l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928L12 18.26z"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#F39C12" d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928L12 18.26zm0-2.292l4.247 2.377-.949-4.773 3.573-3.305-4.833-.573L12 5.275l-2.038 4.42-4.833.572 3.573 3.305-.949 4.773L12 15.968z"/></svg>
+                                </div>
+                                <div class="descript_app col-12">
+                                    <p>Hash bug</p>
+                                    <div class="app_down_icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30"><path fill="none" d="M0 0h24v24H0z"/><path fill="#28CBFF" d="M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm0 18c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8zm1-8h3l-4 4-4-4h3V8h2v4z"/></svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="application col-tab-5 col-mob-12">
+                            <div class="app_logo_container col-12">
+                                <img src="./img/apps/4.png" alt="app">
+                            </div>
+                            <div class="app_detail_container col-12">
+                                <div class="star_container col-12">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#F39C12" d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928z"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#F39C12" d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928z"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#F39C12" d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928z"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#F39C12" d="M12 15.968l4.247 2.377-.949-4.773 3.573-3.305-4.833-.573L12 5.275v10.693zm0 2.292l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928L12 18.26z"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#F39C12" d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928L12 18.26zm0-2.292l4.247 2.377-.949-4.773 3.573-3.305-4.833-.573L12 5.275l-2.038 4.42-4.833.572 3.573 3.305-.949 4.773L12 15.968z"/></svg>
+                                </div>
+                                <div class="descript_app col-12">
+                                    <p>Skype</p>
+                                    <div class="app_down_icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30"><path fill="none" d="M0 0h24v24H0z"/><path fill="#28CBFF" d="M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm0 18c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8zm1-8h3l-4 4-4-4h3V8h2v4z"/></svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="application col-tab-5 col-mob-12">
+                            <div class="app_logo_container col-12">
+                                <img src="./img/apps/5.png" alt="app">
+                            </div>
+                            <div class="app_detail_container col-12">
+                                <div class="star_container col-12">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#F39C12" d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928z"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#F39C12" d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928z"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#F39C12" d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928z"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#F39C12" d="M12 15.968l4.247 2.377-.949-4.773 3.573-3.305-4.833-.573L12 5.275v10.693zm0 2.292l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928L12 18.26z"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#F39C12" d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928L12 18.26zm0-2.292l4.247 2.377-.949-4.773 3.573-3.305-4.833-.573L12 5.275l-2.038 4.42-4.833.572 3.573 3.305-.949 4.773L12 15.968z"/></svg>
+                                </div>
+                                <div class="descript_app col-12">
+                                    <p>Spotify app</p>
+                                    <div class="app_down_icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30"><path fill="none" d="M0 0h24v24H0z"/><path fill="#28CBFF" d="M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm0 18c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8zm1-8h3l-4 4-4-4h3V8h2v4z"/></svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="application col-tab-5 col-mob-12">
+                            <div class="app_logo_container col-12">
+                                <img src="./img/apps/6.png" alt="app">
+                            </div>
+                            <div class="app_detail_container col-12">
+                                <div class="star_container col-12">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#F39C12" d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928z"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#F39C12" d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928z"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#F39C12" d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928z"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#F39C12" d="M12 15.968l4.247 2.377-.949-4.773 3.573-3.305-4.833-.573L12 5.275v10.693zm0 2.292l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928L12 18.26z"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#F39C12" d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928L12 18.26zm0-2.292l4.247 2.377-.949-4.773 3.573-3.305-4.833-.573L12 5.275l-2.038 4.42-4.833.572 3.573 3.305-.949 4.773L12 15.968z"/></svg>
+                                </div>
+                                <div class="descript_app col-12">
+                                    <p>Whatsapp</p>
+                                    <div class="app_down_icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30"><path fill="none" d="M0 0h24v24H0z"/><path fill="#28CBFF" d="M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm0 18c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8zm1-8h3l-4 4-4-4h3V8h2v4z"/></svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="application col-tab-5 col-mob-12">
+                            <div class="app_logo_container col-12">
+                                <img src="./img/apps/7.png" alt="app">
+                            </div>
+                            <div class="app_detail_container col-12">
+                                <div class="star_container col-12">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#F39C12" d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928z"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#F39C12" d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928z"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#F39C12" d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928z"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#F39C12" d="M12 15.968l4.247 2.377-.949-4.773 3.573-3.305-4.833-.573L12 5.275v10.693zm0 2.292l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928L12 18.26z"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#F39C12" d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928L12 18.26zm0-2.292l4.247 2.377-.949-4.773 3.573-3.305-4.833-.573L12 5.275l-2.038 4.42-4.833.572 3.573 3.305-.949 4.773L12 15.968z"/></svg>
+                                </div>
+                                <div class="descript_app col-12">
+                                    <p>Slack client</p>
+                                    <div class="app_down_icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30"><path fill="none" d="M0 0h24v24H0z"/><path fill="#28CBFF" d="M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm0 18c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8zm1-8h3l-4 4-4-4h3V8h2v4z"/></svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="application col-tab-5 col-mob-12">
+                            <div class="app_logo_container col-12">
+                                <img src="./img/apps/8.png" alt="app">
+                            </div>
+                            <div class="app_detail_container col-12">
+                                <div class="star_container col-12">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#F39C12" d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928z"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#F39C12" d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928z"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#F39C12" d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928z"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#F39C12" d="M12 15.968l4.247 2.377-.949-4.773 3.573-3.305-4.833-.573L12 5.275v10.693zm0 2.292l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928L12 18.26z"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#F39C12" d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928L12 18.26zm0-2.292l4.247 2.377-.949-4.773 3.573-3.305-4.833-.573L12 5.275l-2.038 4.42-4.833.572 3.573 3.305-.949 4.773L12 15.968z"/></svg>
+                                </div>
+                                <div class="descript_app col-12">
+                                    <p>App store</p>
+                                    <div class="app_down_icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30"><path fill="none" d="M0 0h24v24H0z"/><path fill="#28CBFF" d="M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm0 18c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8zm1-8h3l-4 4-4-4h3V8h2v4z"/></svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="application col-tab-5 col-mob-12">
+                            <div class="app_logo_container col-12">
+                                <img class="figma" src="./img/apps/9.png" alt="app">
+                            </div>
+                            <div class="app_detail_container col-12">
+                                <div class="star_container col-12">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#F39C12" d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928z"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#F39C12" d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928z"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#F39C12" d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928z"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#F39C12" d="M12 15.968l4.247 2.377-.949-4.773 3.573-3.305-4.833-.573L12 5.275v10.693zm0 2.292l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928L12 18.26z"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#F39C12" d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928L12 18.26zm0-2.292l4.247 2.377-.949-4.773 3.573-3.305-4.833-.573L12 5.275l-2.038 4.42-4.833.572 3.573 3.305-.949 4.773L12 15.968z"/></svg>
+                                </div>
+                                <div class="descript_app col-12">
+                                    <p>Figma</p>
+                                    <div class="app_down_icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30"><path fill="none" d="M0 0h24v24H0z"/><path fill="#28CBFF" d="M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm0 18c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8zm1-8h3l-4 4-4-4h3V8h2v4z"/></svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="application col-tab-5 col-mob-12">
+                            <div class="app_logo_container col-12">
+                                <img src="./img/apps/10.png" alt="app">
+                            </div>
+                            <div class="app_detail_container col-12">
+                                <div class="star_container col-12">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#F39C12" d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928z"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#F39C12" d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928z"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#F39C12" d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928z"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#F39C12" d="M12 15.968l4.247 2.377-.949-4.773 3.573-3.305-4.833-.573L12 5.275v10.693zm0 2.292l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928L12 18.26z"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#F39C12" d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928L12 18.26zm0-2.292l4.247 2.377-.949-4.773 3.573-3.305-4.833-.573L12 5.275l-2.038 4.42-4.833.572 3.573 3.305-.949 4.773L12 15.968z"/></svg>
+                                </div>
+                                <div class="descript_app col-12">
+                                    <p>Online drive</p>
+                                    <div class="app_down_icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30"><path fill="none" d="M0 0h24v24H0z"/><path fill="#28CBFF" d="M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm0 18c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8zm1-8h3l-4 4-4-4h3V8h2v4z"/></svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="application col-tab-5 col-mob-12">
+                            <div class="app_logo_container col-12">
+                                <img src="./img/apps/11.png" alt="app">
+                            </div>
+                            <div class="app_detail_container col-12">
+                                <div class="star_container col-12">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#F39C12" d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928z"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#F39C12" d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928z"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#F39C12" d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928z"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#F39C12" d="M12 15.968l4.247 2.377-.949-4.773 3.573-3.305-4.833-.573L12 5.275v10.693zm0 2.292l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928L12 18.26z"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#F39C12" d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928L12 18.26zm0-2.292l4.247 2.377-.949-4.773 3.573-3.305-4.833-.573L12 5.275l-2.038 4.42-4.833.572 3.573 3.305-.949 4.773L12 15.968z"/></svg>
+                                </div>
+                                <div class="descript_app col-12">
+                                    <p>Twitter</p>
+                                    <div class="app_down_icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30"><path fill="none" d="M0 0h24v24H0z"/><path fill="#28CBFF" d="M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm0 18c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8zm1-8h3l-4 4-4-4h3V8h2v4z"/></svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="application col-tab-5 col-mob-12">
+                            <div class="app_logo_container col-12">
+                                <img src="./img/apps/12.png" alt="app">
+                            </div>
+                            <div class="app_detail_container col-12">
+                                <div class="star_container col-12">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#F39C12" d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928z"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#F39C12" d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928z"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#F39C12" d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928z"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#F39C12" d="M12 15.968l4.247 2.377-.949-4.773 3.573-3.305-4.833-.573L12 5.275v10.693zm0 2.292l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928L12 18.26z"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#F39C12" d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928L12 18.26zm0-2.292l4.247 2.377-.949-4.773 3.573-3.305-4.833-.573L12 5.275l-2.038 4.42-4.833.572 3.573 3.305-.949 4.773L12 15.968z"/></svg>
+                                </div>
+                                <div class="descript_app col-12">
+                                    <p>Playstation</p>
+                                    <div class="app_down_icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30"><path fill="none" d="M0 0h24v24H0z"/><path fill="#28CBFF" d="M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm0 18c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8zm1-8h3l-4 4-4-4h3V8h2v4z"/></svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="application col-tab-5 col-mob-12">
+                            <div class="app_logo_container col-12">
+                                <img src="./img/apps/1.png" alt="app">
+                            </div>
+                            <div class="app_detail_container col-12">
+                                <div class="star_container col-12">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#F39C12" d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928z"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#F39C12" d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928z"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#F39C12" d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928z"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#F39C12" d="M12 15.968l4.247 2.377-.949-4.773 3.573-3.305-4.833-.573L12 5.275v10.693zm0 2.292l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928L12 18.26z"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#F39C12" d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928L12 18.26zm0-2.292l4.247 2.377-.949-4.773 3.573-3.305-4.833-.573L12 5.275l-2.038 4.42-4.833.572 3.573 3.305-.949 4.773L12 15.968z"/></svg>
+                                </div>
+                                <div class="descript_app col-12">
+                                    <p>Discord client</p>
+                                    <div class="app_down_icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30"><path fill="none" d="M0 0h24v24H0z"/><path fill="#28CBFF" d="M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm0 18c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8zm1-8h3l-4 4-4-4h3V8h2v4z"/></svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="application col-tab-5 col-mob-12">
+                            <div class="app_logo_container col-12">
+                                <img src="./img/apps/1.png" alt="app">
+                            </div>
+                            <div class="app_detail_container col-12">
+                                <div class="star_container col-12">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#F39C12" d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928z"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#F39C12" d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928z"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#F39C12" d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928z"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#F39C12" d="M12 15.968l4.247 2.377-.949-4.773 3.573-3.305-4.833-.573L12 5.275v10.693zm0 2.292l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928L12 18.26z"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#F39C12" d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928L12 18.26zm0-2.292l4.247 2.377-.949-4.773 3.573-3.305-4.833-.573L12 5.275l-2.038 4.42-4.833.572 3.573 3.305-.949 4.773L12 15.968z"/></svg>
+                                </div>
+                                <div class="descript_app col-12">
+                                    <p>Discord client</p>
+                                    <div class="app_down_icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30"><path fill="none" d="M0 0h24v24H0z"/><path fill="#28CBFF" d="M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm0 18c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8zm1-8h3l-4 4-4-4h3V8h2v4z"/></svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="application col-tab-5 col-mob-12">
+                            <div class="app_logo_container col-12">
+                                <img src="./img/apps/1.png" alt="app">
+                            </div>
+                            <div class="app_detail_container col-12">
+                                <div class="star_container col-12">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#F39C12" d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928z"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#F39C12" d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928z"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#F39C12" d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928z"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#F39C12" d="M12 15.968l4.247 2.377-.949-4.773 3.573-3.305-4.833-.573L12 5.275v10.693zm0 2.292l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928L12 18.26z"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="#F39C12" d="M12 18.26l-7.053 3.948 1.575-7.928L.587 8.792l8.027-.952L12 .5l3.386 7.34 8.027.952-5.935 5.488 1.575 7.928L12 18.26zm0-2.292l4.247 2.377-.949-4.773 3.573-3.305-4.833-.573L12 5.275l-2.038 4.42-4.833.572 3.573 3.305-.949 4.773L12 15.968z"/></svg>
+                                </div>
+                                <div class="descript_app col-12">
+                                    <p>Discord client</p>
+                                    <div class="app_down_icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30"><path fill="none" d="M0 0h24v24H0z"/><path fill="#28CBFF" d="M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm0 18c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8zm1-8h3l-4 4-4-4h3V8h2v4z"/></svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer footer_downloads col-12 col-mob-12 col-tab-12">
+            <div class="main_footer_container col-12 col-tab-12 col-mob-12">
+                <div class="footer_content col-3 col-tab-6 col-mob-12">
+                    <img src="./img/logo1.png" alt="logo">
+                    <p class="footer_p_descript">
+                        App development tools are the software or computing solutions 
+                        required to give the app developer flexibility and scalable applications. to build security-rich, 
+                        innovative, and scalable applications.
+                         </p>
+                </div>
+                <div class="footer_content col-3 col-tab-6 col-mob-12">
+                    <h4>Important Links</h4>
+                    <a href="">Services</a>
+                    <a href="">Companies</a>
+                    <a href="">Downloads</a>
+                    <a href="">Staff</a>
+                    <a href="">Contact</a>
+                </div>
+                <div class="footer_content col-3 col-tab-6 col-mob-12">
+                    <h4>Contact Us</h4>
+                    <p> KK 232 St, Kigali</p>
+                    <p>Kabeza, Kigali</p>
+                    <p> Republic of Rwanda</p> 
+                    <p><strong>Phone:</strong> +250 781 294 147</p>
+                    <p><strong>Email:</strong> abiheloaf@gmail.com</p>
+                </div>
+                <div class="footer_content col-3 col-tab-6 col-mob-12">
+                    <h4>My Newsletter</h4>
+                    <h3>If you feel like you wanna always get my updates then make 
+                        sure to subscribe below.</h3>
+                    <form action="#" method="post">
+                        <input type="email" name="email" required placeholder="Enter email" maxlength="15">
+                        <input type="submit" value="Subscribe">
+                    </form>
+                    <div class="top">
+                        <a href="#home">
+                            top
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                <path fill="none" d="M0 0h24v24H0z"/>
+                                <path fill="#fff" d="M13 7.828V20h-2V7.828l-5.364 5.364-1.414-1.414L12 4l7.778 7.778-1.414 1.414L13 7.828z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright_section col-12">
+                <div class="copyright_company col-6 col-mob-12">
+                    <p>&copy; Copyright 2020 <strong>Rwanda Coding Academy</strong>. All Rights Reserved</p>
+                </div>
+                <div class="copyright_designer col-6 col-mob-12">
+                    <p>Designed with <i class="fas fa-heart"></i> by Abi-Seth</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
